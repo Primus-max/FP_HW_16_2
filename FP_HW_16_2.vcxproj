@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FP_HW_16_2.cpp" />
+    <ClCompile Include="FP_HW_16_2_Task_1.cpp" />
     <ClCompile Include="message_utils.cpp" />
   </ItemGroup>
   <ItemGroup>
