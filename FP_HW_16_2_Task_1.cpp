@@ -13,20 +13,15 @@ char* ReplaceWord(char* str, const char* oldWord, const char* newWord) {
     
     char* ptr = str;
     while ((ptr = strstr(ptr, oldWord)) != nullptr) {
-        // Для цикла надо каждый раз копировать с текущего конца, поэтому newStr + strlen(newStr)
         strncpy_s(newStr + strlen(newStr), newStrSize - strlen(newStr), str, ptr - str);
-        // Добавляем новое слово
         strcat_s(newStr, newStrSize, newWord);
-        // Перемещаем ptr на следующую позицию после найденного слова
         ptr += oldWordLength;
-        // Перемещаем str на следующую позицию после найденного слова
         str = ptr;
     }
 
-    // Добавляем оставшуюся часть строки str
     strcat_s(newStr, newStrSize, str);
 
-    return newStr; // Возвращаем модифицированную строку
+    return newStr; 
 }
 
 
