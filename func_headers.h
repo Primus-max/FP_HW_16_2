@@ -16,6 +16,11 @@ size_t CalcSizeNewStr(char* str, const char* oldWord, const char* newWord);
 // Функция делает каждое слово с заглавной буквы
 void capitalizeSentences(char* str);
 
+// Функция подсчёта букв в тексте
+void countLetters(char* str);
+
+// Функция печати подсчитанных символов
+void printCounts(const int counts[]);
 
 //// Функция удаляет из строки символ с заданным номером.
 //void deleteCharacterAtIndex(char str[], int index);

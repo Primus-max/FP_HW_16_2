@@ -19,20 +19,21 @@ int main()
 		"Плоды спелые, плоды сочные, плоды сладкие. "
 		"Жизнь прекрасна, жизнь удивительна, жизнь полна сюрпризов.";
 
-
-
-
 	cout << "Есть некоторый текст: \n" << someText << endl;
 
 	char oldWord[30]{};
 	char newWord[30]{};
 
+	// Задание 1
 	Info("Введите слово которое надо заменить в тексте и слово на которое надо заменить");
 	cin >> oldWord >> newWord;
 	char* newSentence = ReplaceWord(someText, oldWord, newWord);
-	//cout << newSentence;
+	cout << newSentence;
 
+	// Задание 2
 	capitalizeSentences(someText);
 	cout << someText;
 
+	// Задание 3
+	countLetters(someText);
 }
